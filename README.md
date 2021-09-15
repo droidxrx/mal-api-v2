@@ -16,7 +16,8 @@ This is the official documentation from MyAnimeList, if you need to verify any f
 -   [Getting Started](#getting-started)
     -   [Prerequisites](#prerequisites)
     -   [Install](#install)
--   Usage
+-   [Usage](#usage)
+-   List Class
     -   Oauth2
         -   pkceGenerate
         -   pkceVerifyChallenge
@@ -69,6 +70,10 @@ npm install mal-api-v2
 yarn add mal-api-v2
 ```
 
+# Usage
+
+[Example][example-url]
+
 # LICENSE
 
 [MIT][license-url]
@@ -79,3 +84,4 @@ yarn add mal-api-v2
 [license-image]: https://img.shields.io/npm/l/mal-api-v2
 [license-url]: LICENSE
 [examplefill]: https://cdn.jsdelivr.net/gh/droidxrx/DroidXrX@339866b/doc/ExampleFill.png
+[example-url]: https://github.com/droidxrx/example/tree/master/project/mal-api-v2/nodejs
