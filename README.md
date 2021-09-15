@@ -1,8 +1,6 @@
 # mal-api-v2
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM License][license-image]][license-url]
-[![NPM Downloads][downloads-image]][npm-url]
+<a href="https://npmjs.org/package/mal-api-v2"><img src="https://img.shields.io/npm/v/mal-api-v2?style=flat-square" alt="Version" title="Version"></a> <a href="https://npmjs.org/package/mal-api-v2"><img src="https://img.shields.io/npm/l/mal-api-v2?style=flat-square" alt="License" title="License"></a> <a href="https://npmjs.org/package/mal-api-v2"><img src="https://img.shields.io/npm/dt/mal-api-v2?style=flat-square" alt="Total downloads" title="Total downloads"></a>
 
 # Official documentation
 
@@ -72,16 +70,10 @@ yarn add mal-api-v2
 
 # Usage
 
-[Example][example-url]
+[Example](https://github.com/droidxrx/example/tree/master/project/mal-api-v2/nodejs)
 
 # LICENSE
 
-[MIT][license-url]
+[MIT](LICENSE)
 
-[downloads-image]: https://img.shields.io/npm/dm/mal-api-v2.svg
-[npm-image]: https://img.shields.io/npm/v/mal-api-v2.svg
-[npm-url]: https://npmjs.org/package/mal-api-v2
-[license-image]: https://img.shields.io/npm/l/mal-api-v2
-[license-url]: LICENSE
 [examplefill]: https://cdn.jsdelivr.net/gh/droidxrx/DroidXrX@339866b/doc/ExampleFill.png
-[example-url]: https://github.com/droidxrx/example/tree/master/project/mal-api-v2/nodejs
