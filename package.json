@@ -1,0 +1,61 @@
+{
+	"author": "DroidXrX <droidxrx@gmail.com> (https://github.com/droidxrx)",
+	"bugs": {
+		"url": "https://github.com/droidxrx/mal-api-v2/issues"
+	},
+	"description": "An awesome library to connect with the new MyAnimeList's API v2!",
+	"homepage": "https://github.com/droidxrx/mal-api-v2#readme",
+	"keywords": [
+		"anime",
+		"manga",
+		"mal-api"
+	],
+	"license": "MIT",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"name": "mal-api-v2",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/droidxrx/mal-api-v2.git"
+	},
+	"version": "1.0.0",
+	"devDependencies": {
+		"@babel/core": "^7.15.5",
+		"@babel/plugin-transform-runtime": "^7.15.0",
+		"@babel/preset-env": "^7.15.4",
+		"@babel/preset-typescript": "^7.15.0",
+		"@rollup/plugin-commonjs": "^20.0.0",
+		"@rollup/plugin-node-resolve": "^13.0.4",
+		"@types/node": "^16.7.10",
+		"eslint": "^7.32.0",
+		"eslint-config-nodets": "^1.0.0",
+		"rollup": "^2.56.3",
+		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-ts": "^1.4.1",
+		"typescript": "^4.4.2"
+	},
+	"dependencies": {
+		"axios": "^0.21.4"
+	},
+	"scripts": {
+		"build": "rimraf lib && yarn rollup --config ./rollup.config.js"
+	},
+	"clean-publish": {
+		"files": [
+			".git",
+			".vscode",
+			".gitignore",
+			".eslintrc.js",
+			"tsconfig.json",
+			"rollup.config.js",
+			"src",
+			"node_modules",
+			"yarn.lock"
+		],
+		"fields": [
+			"clean-publish",
+			"scripts",
+			"devDependencies"
+		]
+	}
+}

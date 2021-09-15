@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"preserveConstEnums": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"target": "es2021",
+		"rootDir": "src"
+	}
+}
