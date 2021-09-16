@@ -16,6 +16,13 @@ This is the official documentation from MyAnimeList, if you need to verify any f
     -   [Install](#install)
 -   [Example](https://github.com/droidxrx/example/tree/master/project/mal-api-v2/nodejs)
 -   [Initial stepts before use the API](#initial-stepts-before-use-the-api)
+-   Classes
+    -   [Anime](docs/Anime.md)
+    -   [Manga](docs/Manga.md)
+    -   [Oauth2](docs/Oauth2.md)
+    -   [User](docs/User.md)
+    -   [UserAnimeList](docs/UserAnimeList.md)
+    -   [UserMangaList](docs/UserMangaList.md)
 -   [License](#license)
 
 # Built With
