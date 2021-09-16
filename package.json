@@ -40,7 +40,7 @@
 		"axios": "^0.21.4"
 	},
 	"scripts": {
-		"build": "rimraf lib && yarn rollup --config ./rollup.config.js"
+		"build": "rimraf lib/index.js && yarn rollup --config ./rollup.config.js"
 	},
 	"clean-publish": {
 		"files": [
@@ -52,7 +52,8 @@
 			"rollup.config.js",
 			"src",
 			"node_modules",
-			"yarn.lock"
+			"yarn.lock",
+			"docs"
 		],
 		"fields": [
 			"clean-publish",
