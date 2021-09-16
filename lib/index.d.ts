@@ -13,271 +13,264 @@ interface codePair {
     code_verifier: string;
 }
 interface animeSearchQuery {
+    /** Query */
     q: string;
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link animeInListFields see} (optional) */
     fields?: animeInListFields;
 }
 interface animeSearchRanking {
-    ranking_type: "all" | "airing" | "upcoming" | "tv" | "ova" | "movie" | "special" | "bypopularity" | "favorite";
+    /** Default "all" {@link animeSearchRanking.ranking_type see} (optional) */
+    ranking_type?: "all" | "airing" | "upcoming" | "tv" | "ova" | "movie" | "special" | "bypopularity" | "favorite";
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link animeInListFields see} (optional) */
     fields?: animeInListFields;
 }
 interface animeSearchSeasonal {
+    /** Default current year (optional) */
     year?: number;
+    /** Default current season (optional) */
     season?: "winter" | "spring" | "summer" | "fall";
+    /** Default "anime_score" (optional) */
     sort?: "anime_score" | "anime_num_list_users";
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link animeInListFields see} (optional) */
     fields?: animeInListFields;
 }
 interface animeSearchSuggested {
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link animeInListFields see} (optional) */
     fields?: animeInListFields;
 }
 interface userAnimeList {
+    /** Default "@me" (optional) */
     user_name?: string;
+    /** String {@link userAnimeList.status see} (optional) */
     status?: "watching" | "completed" | "on_hold" | "dropped" | "plan_to_watch";
+    /** Default "anime_title" {@link userAnimeList.sort see} (optional) */
     sort?: "list_score" | "list_updated_at" | "anime_title" | "anime_start_date" | "anime_id";
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link userAnimeFields see} (optional) */
     fields?: userAnimeFields;
 }
 interface userAnimeListUpdate {
+    /** String {@link userAnimeListUpdate.status see} (optional) */
     status?: "watching" | "completed" | "on_hold" | "dropped" | "plan_to_watch";
+    /** Boolean (optional) */
     is_rewatching?: boolean;
+    /** Number 0-10 (optional) */
     score?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+    /** Number (optional) */
     num_watched_episodes?: number;
+    /** Number 0-2 (optional) */
     priority?: 0 | 1 | 2;
+    /** Number (optional) */
     num_times_rewatched?: number;
+    /** Number 0-5 (optional) */
     rewatch_value?: 0 | 1 | 2 | 3 | 4 | 5;
+    /** String (optional) */
     tags?: string;
+    /** String (optional) */
     comments?: string;
 }
 interface mangaSearchQuery {
+    /** Query */
     q: string;
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link mangaInListFields see} (optional) */
     fields?: mangaInListFields;
 }
 interface mangaSearchRanking {
+    /** Default "all" {@link mangaSearchRanking.ranking_type see} (optional) */
     ranking_type: "all" | "manga" | "oneshots" | "doujin" | "lightnovels" | "novels" | "manhwa" | "manhua" | "bypopularity" | "favorite";
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link mangaInListFields see} (optional) */
     fields?: mangaInListFields;
 }
 interface userMangaList {
+    /** Default "@me" (optional) */
     user_name?: string;
+    /** String {@link userMangaList.status see} (optional) */
     status?: "reading" | "completed" | "on_hold" | "dropped" | "plan_to_read";
+    /** Default "manga_title" {@link userMangaList.sort see} (optional) */
     sort?: "list_score" | "list_updated_at" | "manga_title" | "manga_start_date" | "manga_id";
+    /** Default 100 (optional) */
     limit?: number;
+    /** Default 0 (optional) */
     offset?: number;
+    /** Array string {@link mangaInListFields see} (optional) */
     fields?: userMangaFields;
 }
 interface userMangaListUpdate {
+    /** String {@link userMangaListUpdate.status see} (optional) */
     status?: "reading" | "completed" | "on_hold" | "dropped" | "plan_to_read";
+    /** Boolean (optional) */
     is_rereading?: boolean;
+    /** Number 0-10 (optional) */
     score?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+    /** Number (optional) */
     num_volumes_read?: number;
+    /** Number (optional) */
     num_chapters_read?: number;
+    /** Number 0-2 (optional) */
     priority?: 0 | 1 | 2;
+    /** Number (optional) */
     num_times_reread?: number;
+    /** Number 0-5 (optional) */
     reread_value?: 0 | 1 | 2 | 3 | 4 | 5;
+    /** String (optional) */
     tags?: string;
+    /** String (optional) */
     comments?: string;
 }
-export class Anime {
+declare class Anime {
+    #private;
     /**
-     * @param accessToken
+     * @param {string} accessToken access_token
      */
     constructor(accessToken: string);
     /**
-     * @param id Anime id
-     * @param fields Array {@link animeFullFields See}
-     * @returns
+     * @param {number} id Anime id
+     * @param {animeFullFields} [fields] Array string {@link animeFullFields see}
      */
     id(id: number, fields?: animeFullFields): Promise<obj>;
     /**
-     * @param obj Object
-     * @property q String
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link animeSearchQuery.fields See} (optional)
-     * @returns
+     * @param {animeSearchQuery} obj Anime search query
      */
     search(obj: animeSearchQuery): Promise<obj>;
     /**
-     * @param obj Object
-     * @property ranking_type Default 'all' {@link animeSearchRanking.ranking_type See}
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link animeSearchRanking.fields See} (optional)
-     * @returns
+     * @param {animeSearchRanking} obj Anime search ranking query
      */
     ranking(obj: animeSearchRanking): Promise<obj>;
     /**
-     * @param obj Object
-     * @property year Default current year (optional)
-     * @property season Default current season (optional)
-     * @property sort Default 'anime_score' (optional)
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link animeSearchSeasonal.fields See} (optional)
-     * @returns
+     * @param {animeSearchSeasonal} obj Anime search seasonal query
      */
     seasonal(obj: animeSearchSeasonal): Promise<obj>;
     /**
-     * @param obj Object
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link animeSearchSuggested.fields See} (optional)
-     * @returns
+     * @param {animeSearchSuggested} obj Anime search suggested query
      */
     suggested(obj: animeSearchSuggested): Promise<obj>;
 }
-export class Manga {
+declare class Manga {
+    #private;
     /**
-     * @param accessToken
+     *@param {string} accessToken access_token
      */
     constructor(accessToken: string);
     /**
-     * @param id Manga id
-     * @param fields Array {@link mangaFullFields See}
-     * @returns
+     * @param {number} id Manga id
+     * @param {mangaFullFields} [fields] Array string {@link mangaFullFields see}
      */
     id(id: number, fields?: mangaFullFields): Promise<obj>;
     /**
-     * @param obj Object
-     * @property q String
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link mangaSearchQuery.fields See} (optional)
-     * @returns
+     * @param {mangaSearchQuery} obj Manga search query
      */
     search(obj: mangaSearchQuery): Promise<obj>;
     /**
-     * @param obj Object
-     * @property ranking_type Default 'all' {@link mangaSearchRanking.ranking_type See}
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link mangaSearchRanking.fields See} (optional)
-     * @returns
+     * @param {mangaSearchRanking} obj Manga search ranking query
      */
     ranking(obj: mangaSearchRanking): Promise<obj>;
 }
-export class UserAnimeList {
+declare class UserAnimeList {
+    #private;
     /**
-     * @param accessToken
+     * @param {string} accessToken access_token
      */
     constructor(accessToken: string);
     /**
-     * @param obj Object
-     * @property user_name Default '@me' (optional)
-     * @property status (optional)
-     * @property sort Default 'anime_title' (optional)
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link userAnimeList.fields See} (optional)
-     * @returns
+     * @param {userAnimeList} obj Object
      */
     getList(obj: userAnimeList): Promise<obj>;
     /**
-     * @param animeId Anime id
-     * @returns
+     * @param {number} animeId Anime id
      */
     deleteList(animeId: number): Promise<obj>;
     /**
-     * @param obj Object
-     * @property status
-     * @property is_rewatching
-     * @property score
-     * @property num_watched_episodes
-     * @property priority
-     * @property num_times_rewatched
-     * @property rewatch_value
-     * @property tags
-     * @property comments
-     * @returns
+     * @param {userAnimeListUpdate} obj Object
      */
     updateList(obj: userAnimeListUpdate): Promise<obj>;
 }
-export class UserMangaList {
+declare class UserMangaList {
+    #private;
     /**
-     * @param accessToken
+     * @param {string} accessToken access_token
      */
     constructor(accessToken: string);
     /**
-     * @param obj Object
-     * @property user_name Default '@me' (optional)
-     * @property status (optional)
-     * @property sort Default 'manga_title' (optional)
-     * @property limit Default 100 (optional)
-     * @property offset Default 0 (optional)
-     * @property fields Array {@link userMangaList.fields See} (optional)
-     * @returns
+     * @param {userMangaList} obj Object
      */
     getList(obj: userMangaList): Promise<obj>;
     /**
-     * @param mangaId Anime id
-     * @returns
+     * @param {number} mangaId Anime id
      */
     deleteList(mangaId: number): Promise<obj>;
     /**
-     * @param obj Object
-     * @property status
-     * @property is_rewatching
-     * @property score
-     * @property num_watched_episodes
-     * @property priority
-     * @property num_times_rewatched
-     * @property rewatch_value
-     * @property tags
-     * @property comments
-     * @returns
+     * @param {userMangaListUpdate} obj Object
      */
     updateList(obj: userMangaListUpdate): Promise<obj>;
 }
-export class User {
+declare class User {
+    #private;
     /**
-     * @param accessToken
+     * @param {string} accessToken access_token
      */
     constructor(accessToken: string);
+    /**
+     * @param {string} [userName] Default '@me' (optional)
+     * @param {userFields} [fields] Array string {@link userFields see} (optional)
+     */
     get(userName?: string, fields?: userFields): Promise<obj>;
 }
-export class Oauth2 {
+declare class Oauth2 {
+    #private;
     /**
-     * @param clientId https://myanimelist.net/apiconfig/create
-     * @param clientSecret Optional
+     * @param clientId String https://myanimelist.net/apiconfig/create
+     * @param clientSecret String (optional)
      */
     constructor(clientId: string, clientSecret?: string);
     /**
-     * @param length Optional default is "43"
-     * @returns
+     * @param length Default 43 (optional)
      */
     pkceGenerate(length?: number): codePair;
     /**
      * @param codeVerifier Get this from method pkceGenerate
      * @param codeChallenge Get this from method pkceGenerate
-     * @returns
      */
     pkceVerifyChallenge(codeVerifier: string, codeChallenge: string): boolean;
     /**
      * @param codeChallenge Get this from method pkceGenerate
-     * @param urlRedirect Optional if your set only one url redirect from api config
-     * @returns
+     * @param urlRedirect Optional if you set more than one redirect url from api configuration
      */
     urlAuthorize(codeChallenge: string, urlRedirect?: string): string;
     /**
      * @param code To get code you must access url from method urlAuthorize
      * @param codeChallenge Get this from method pkceGenerate
-     * @returns
      */
     getToken(code: string, codeChallenge: string): Promise<obj>;
     /**
      * @param refreshToken Get this from method getToken
-     * @returns
      */
     refreshToken(refreshToken: string): Promise<obj>;
 }
+export { Anime, Manga, UserAnimeList, UserMangaList, User, Oauth2 };
