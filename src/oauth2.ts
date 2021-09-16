@@ -8,8 +8,8 @@ export class Oauth2 {
 	#fetchs = new Fetchs()
 
 	/**
-	 * @param clientId String https://myanimelist.net/apiconfig/create
-	 * @param clientSecret String (optional)
+	 * @param {string} clientId String https://myanimelist.net/apiconfig/create
+	 * @param {string} [clientSecret] String (optional)
 	 */
 	constructor (clientId: string, clientSecret: string = '') {
 		this.#clientId = clientId
@@ -17,23 +17,23 @@ export class Oauth2 {
 	}
 
 	/**
-	 * @param length Default 43 (optional)
+	 * @param {number} [length] Default 43 (optional)
 	 */
 	pkceGenerate (length: number = 43): codePair {
 		return pkceGenerate(length)
 	}
 
 	/**
-	 * @param codeVerifier Get this from method pkceGenerate
-	 * @param codeChallenge Get this from method pkceGenerate
+	 * @param {string} codeVerifier Get this from method pkceGenerate
+	 * @param {string} codeChallenge Get this from method pkceGenerate
 	 */
 	pkceVerifyChallenge (codeVerifier: string, codeChallenge: string): boolean {
 		return verifyChallenge(codeVerifier, codeChallenge)
 	}
 
 	/**
-	 * @param codeChallenge Get this from method pkceGenerate
-	 * @param urlRedirect Optional if you set more than one redirect url from api configuration
+	 * @param {string} codeChallenge Get this from method pkceGenerate
+	 * @param {string} [urlRedirect] Optional if you set more than one redirect url from api configuration
 	 */
 	urlAuthorize (codeChallenge: string, urlRedirect: string = ''): string {
 		this.#urlRedirect = urlRedirect
@@ -47,8 +47,8 @@ export class Oauth2 {
 	}
 
 	/**
-	 * @param code To get code you must access url from method urlAuthorize
-	 * @param codeChallenge Get this from method pkceGenerate
+	 * @param {string} code To get code you must access url from method urlAuthorize
+	 * @param {string} codeChallenge Get this from method pkceGenerate
 	 */
 	async getToken (code: string, codeChallenge: string): Promise<obj> {
 		return this.#fetchs.token({
@@ -62,7 +62,7 @@ export class Oauth2 {
 	}
 
 	/**
-	 * @param refreshToken Get this from method getToken
+	 * @param {string} refreshToken Get this from method getToken
 	 */
 	async refreshToken (refreshToken: string): Promise<obj> {
 		return this.#fetchs.token({
