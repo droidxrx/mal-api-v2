@@ -1,4 +1,5 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios'
+import qs from 'qs'
 import { obj, returnPromies } from './interfaceType'
 
 export default class {
