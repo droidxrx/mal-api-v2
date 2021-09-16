@@ -187,7 +187,6 @@ const oauth2 = new Oauth2(clientId, clientSecret);
 ```javascript
 /**
  * @param {number} length Default 43 (optional)
- * @returns {{ code_challenge: string, code_verifier: string }}
  */
 oauth2.pkceGenerate(43);
 ```
@@ -207,9 +206,8 @@ oauth2.pkceVerifyChallenge(codeVerifier, codeChallenge);
 
 ```javascript
 /**
- * @param codeChallenge Get this from method pkceGenerate
- * @param urlRedirect Optional if you set more than one redirect url from api configuration
- * @returns {string}
+ * @param {string} codeChallenge Get this from method pkceGenerate
+ * @param {string} urlRedirect Optional if you set more than one redirect url from api configuration
  */
 oauth2.urlAuthorize(codeChallenge, urlRedirect);
 ```
@@ -218,9 +216,8 @@ oauth2.urlAuthorize(codeChallenge, urlRedirect);
 
 ```javascript
 /**
- * @param code To get code you must access url from method urlAuthorize
- * @param codeChallenge Get this from method pkceGenerate
- * @returns { { "status": true, "return": { "token_type": "Bearer", "expires_in": number, "access_token": string, "refresh_token": string } } }
+ * @param {string} code To get code you must access url from method urlAuthorize
+ * @param {string} codeChallenge Get this from method pkceGenerate
  */
 oauth2.getToken(code, codeChallenge);
 ```
@@ -229,8 +226,7 @@ oauth2.getToken(code, codeChallenge);
 
 ```javascript
 /**
- * @param refreshToken Get this from method getToken
- * @returns { { "status": true, "return": { "token_type": "Bearer", "expires_in": number, "access_token": string, "refresh_token": string } } }
+ * @param {string} refreshToken Get this from method getToken
  */
 oauth2.refreshToken(refreshToken);
 ```
