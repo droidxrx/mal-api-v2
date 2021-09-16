@@ -145,7 +145,6 @@ interface userMangaListUpdate {
     comments?: string;
 }
 declare class Anime {
-    #private;
     /**
      * @param {string} accessToken access_token
      */
@@ -173,7 +172,6 @@ declare class Anime {
     suggested(obj: animeSearchSuggested): Promise<obj>;
 }
 declare class Manga {
-    #private;
     /**
      *@param {string} accessToken access_token
      */
@@ -193,7 +191,6 @@ declare class Manga {
     ranking(obj: mangaSearchRanking): Promise<obj>;
 }
 declare class UserAnimeList {
-    #private;
     /**
      * @param {string} accessToken access_token
      */
@@ -212,7 +209,6 @@ declare class UserAnimeList {
     updateList(obj: userAnimeListUpdate): Promise<obj>;
 }
 declare class UserMangaList {
-    #private;
     /**
      * @param {string} accessToken access_token
      */
@@ -231,7 +227,6 @@ declare class UserMangaList {
     updateList(obj: userMangaListUpdate): Promise<obj>;
 }
 declare class User {
-    #private;
     /**
      * @param {string} accessToken access_token
      */
@@ -243,7 +238,6 @@ declare class User {
     get(userName?: string, fields?: userFields): Promise<obj>;
 }
 declare class Oauth2 {
-    #private;
     /**
      * @param {string} clientId String https://myanimelist.net/apiconfig/create
      * @param {string} [clientSecret] String (optional)
