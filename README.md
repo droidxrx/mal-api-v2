@@ -14,14 +14,15 @@ This is the official documentation from MyAnimeList, if you need to verify any f
 -   [Getting Started](#getting-started)
     -   [Prerequisites](#prerequisites)
     -   [Install](#install)
+-   [Example](https://github.com/droidxrx/example/tree/master/project/mal-api-v2/nodejs)
 -   [Usage](#usage)
--   List Class
-    -   Oauth2
-        -   pkceGenerate
-        -   pkceVerifyChallenge
-        -   urlAuthorize
-        -   getToken
-        -   refreshToken
+    -   [Initial stepts before use the API](#initial-stepts-before-use-the-api)
+    -   [Oauth2](#oauth2)
+        -   [pkceGenerate](#pkcegenerate)
+        -   [pkceVerifyChallenge](#pkceverifychallenge)
+        -   [urlAuthorize](#urlauthorize)
+        -   [getToken](#gettoken)
+        -   [refreshToken](#refreshtoken)
     -   Anime
         -   id
         -   search
@@ -42,6 +43,7 @@ This is the official documentation from MyAnimeList, if you need to verify any f
         -   updateList
     -   User
         -   get
+-   [License](#license)
 
 # Built With
 
@@ -70,7 +72,168 @@ yarn add mal-api-v2
 
 # Usage
 
-[Example](https://github.com/droidxrx/example/tree/master/project/mal-api-v2/nodejs)
+## Initial stepts before use the API
+
+1. Get value from parameter `code`
+
+    ```javascript
+    const { Oauth2 } = require("mal-api-v2");
+
+    // Params clientSecret (optional)
+    const oauth2 = new Oauth2(clientId, clientSecret);
+
+    // Save this to database or other
+    const pkce = oauth2.pkceGenerate();
+    // { code_challenge: string, code_verifier: string }
+
+    // This generate the url that you need to redirect & params urlRedirect (optional)
+    const urlToRedirect = oauth2.urlAuthorize(pkce.code_challenge, urlRedirect);
+
+    //This example is for expressjs, but you only need to do a redirection to the url generated
+    res.redirect(urlToRedirect);
+    ```
+
+    When the user authorize you, the user will be redirected again to the url that you filled at the information of the application, with a param "code", you are going to save this code in a database or something.
+
+2. Then when we have this `code`, we will need to create a session or a Access Token like this:
+
+    ```javascript
+    const { Oauth2 } = require("mal-api-v2");
+
+    // Params clientSecret (optional)
+    const oauth2 = new Oauth2(clientId, clientSecret);
+
+    // Get token
+    oauth2
+    	.getToken(code, codeChallenge)
+    	.then((response) => {
+    		// response to database or other
+    		/*
+    		{
+    			"status": true,
+    			"return": {
+    				"token_type": "Bearer",
+    				"expires_in": number,
+    				"access_token": string,
+    				"refresh_token": string
+    			}
+    		}
+    	*/
+    	})
+    	.catch((error) => {
+    		/*
+    		{
+    			"status": false,
+    			"return": {
+    				"error": string,
+    				"message": string
+    			}
+    		}
+    	*/
+    	});
+    ```
+
+3. If the session is expired, you are going to need to refresh:
+
+    ```javascript
+    const { Oauth2 } = require("mal-api-v2");
+
+    // Params clientSecret (optional)
+    const oauth2 = new Oauth2(clientId, clientSecret);
+
+    // Get token
+    oauth2
+    	.refreshToken(accessToken)
+    	.then((response) => {
+    		// response to database or other
+    		/*
+    		{
+    			"status": true,
+    			"return": {
+    				"token_type": "Bearer",
+    				"expires_in": number,
+    				"access_token": string,
+    				"refresh_token": string
+    			}
+    		}
+    	*/
+    	})
+    	.catch((error) => {
+    		/*
+    		{
+    			"status": false,
+    			"return": {
+    				"error": string,
+    				"message": string
+    			}
+    		}
+    	*/
+    	});
+    ```
+
+## Oauth2
+
+Initialize object
+
+```javascript
+const { Oauth2 } = require("mal-api-v2");
+
+//clientId as first parameter, and optional clientSecret if is need it.
+const oauth2 = new Oauth2(clientId, clientSecret);
+```
+
+### pkceGenerate
+
+```javascript
+/**
+ * @param {number} length Default 43 (optional)
+ * @returns {{ code_challenge: string, code_verifier: string }}
+ */
+oauth2.pkceGenerate(43);
+```
+
+### pkceVerifyChallenge
+
+```javascript
+/**
+ * @param {string} codeVerifier Get this from method pkceGenerate
+ * @param {string} codeChallenge Get this from method pkceGenerate
+ * @returns {boolean}
+ */
+oauth2.pkceVerifyChallenge(codeVerifier, codeChallenge);
+```
+
+### urlAuthorize
+
+```javascript
+/**
+ * @param codeChallenge Get this from method pkceGenerate
+ * @param urlRedirect Optional if you set more than one redirect url from api configuration
+ * @returns {string}
+ */
+oauth2.urlAuthorize(codeChallenge, urlRedirect);
+```
+
+### getToken
+
+```javascript
+/**
+ * @param code To get code you must access url from method urlAuthorize
+ * @param codeChallenge Get this from method pkceGenerate
+ * @returns { { "status": true, "return": { "token_type": "Bearer", "expires_in": number, "access_token": string, "refresh_token": string } } }
+ */
+oauth2.getToken(code, codeChallenge);
+```
+
+### refreshToken
+
+```javascript
+/**
+ * @param refreshToken Get this from method getToken
+ * @returns { { "status": true, "return": { "token_type": "Bearer", "expires_in": number, "access_token": string, "refresh_token": string } } }
+ */
+oauth2.refreshToken(refreshToken);
+```
 
 # LICENSE
 
