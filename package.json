@@ -53,7 +53,8 @@
 			"src",
 			"node_modules",
 			"yarn.lock",
-			"docs"
+			"docs",
+			"LICENSE"
 		],
 		"fields": [
 			"clean-publish",
