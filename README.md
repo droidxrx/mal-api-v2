@@ -23,25 +23,25 @@ This is the official documentation from MyAnimeList, if you need to verify any f
         -   [urlAuthorize](#urlauthorize)
         -   [getToken](#gettoken)
         -   [refreshToken](#refreshtoken)
-    -   Anime
+    -   [Anime](#anime)
         -   id
         -   search
         -   ranking
         -   seasonal
         -   suggested
-    -   Manga
+    -   [Manga](#manga)
         -   id
         -   search
         -   ranking
-    -   UserAnimeList
+    -   [UserAnimeList](#useranimelist)
         -   getList
         -   deleteList
         -   updateList
-    -   UserMangaList
+    -   [UserMangaList](#usermangalist)
         -   getList
         -   deleteList
         -   updateList
-    -   User
+    -   [User](#user)
         -   get
 -   [License](#license)
 
@@ -107,7 +107,7 @@ yarn add mal-api-v2
     oauth2
     	.getToken(code, codeChallenge)
     	.then((response) => {
-    		// response to database or other
+    		// Save response to database or other
     		/*
     		{
     			"status": true,
@@ -145,7 +145,7 @@ yarn add mal-api-v2
     oauth2
     	.refreshToken(accessToken)
     	.then((response) => {
-    		// response to database or other
+    		// Save response to database or other
     		/*
     		{
     			"status": true,
@@ -178,7 +178,10 @@ Initialize object
 ```javascript
 const { Oauth2 } = require("mal-api-v2");
 
-//clientId as first parameter, and optional clientSecret if is need it.
+/**
+ * @param {string} clientId String https://myanimelist.net/apiconfig/create
+ * @param {string} [clientSecret] String (optional)
+ */
 const oauth2 = new Oauth2(clientId, clientSecret);
 ```
 
@@ -230,6 +233,41 @@ oauth2.getToken(code, codeChallenge);
  */
 oauth2.refreshToken(refreshToken);
 ```
+
+## Anime
+
+Initialize object
+
+```javascript
+const { Anime } = require("mal-api-v2");
+
+/**
+ * @param {string} accessToken access_token
+ */
+const anime = new Anime(accessToken);
+```
+
+### id
+
+```javascript
+/**
+ * @param {number} id Anime id
+ * @param {string[]} [fields] Array string
+ * @returns {Promise<object>}
+ */
+anime
+	.id(id, fields)
+	.then((response) => console.log(response))
+	.catch((error) => console.log(error));
+```
+
+## Manga
+
+## UserAnimeList
+
+## UserMangaList
+
+## User
 
 # LICENSE
 
