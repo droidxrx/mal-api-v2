@@ -8,21 +8,14 @@ export class UserAnimeList {
 	#fetchs = new Fetchs()
 
 	/**
-	 * @param accessToken
+	 * @param {string} accessToken access_token
 	 */
 	constructor (accessToken: string) {
 		this.#accessToken = accessToken
 	}
 
 	/**
-	 * @param obj Object
-	 * @property user_name Default '@me' (optional)
-	 * @property status (optional)
-	 * @property sort Default 'anime_title' (optional)
-	 * @property limit Default 100 (optional)
-	 * @property offset Default 0 (optional)
-	 * @property fields Array {@link userAnimeList.fields See} (optional)
-	 * @returns
+	 * @param {userAnimeList} obj Object
 	 */
 	async getList (obj: userAnimeList): Promise<obj> {
 		const nObj = { status: obj.status, sort: obj.sort ?? 'anime_title', limit: obj.limit ?? 100, offset: obj.offset ?? 0, fields: checkFields(userAnime, obj.fields) }
@@ -30,25 +23,14 @@ export class UserAnimeList {
 	}
 
 	/**
-	 * @param animeId Anime id
-	 * @returns
+	 * @param {number} animeId Anime id
 	 */
 	async deleteList (animeId: number): Promise<obj> {
 		return this.#fetchs.animeMangaDeleteList(this.#accessToken, 'anime', animeId)
 	}
 
 	/**
-	 * @param obj Object
-	 * @property status
-	 * @property is_rewatching
-	 * @property score
-	 * @property num_watched_episodes
-	 * @property priority
-	 * @property num_times_rewatched
-	 * @property rewatch_value
-	 * @property tags
-	 * @property comments
-	 * @returns
+	 * @param {userAnimeListUpdate} obj Object
 	 */
 	async updateList (obj: userAnimeListUpdate): Promise<obj> {
 		return this.#fetchs.animeMangaUpdateList(this.#accessToken, 'anime', obj)

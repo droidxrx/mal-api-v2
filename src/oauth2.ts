@@ -8,8 +8,8 @@ export class Oauth2 {
 	#fetchs = new Fetchs()
 
 	/**
-	 * @param clientId https://myanimelist.net/apiconfig/create
-	 * @param clientSecret Optional
+	 * @param clientId String https://myanimelist.net/apiconfig/create
+	 * @param clientSecret String (optional)
 	 */
 	constructor (clientId: string, clientSecret: string = '') {
 		this.#clientId = clientId
@@ -17,8 +17,7 @@ export class Oauth2 {
 	}
 
 	/**
-	 * @param length Optional default is "43"
-	 * @returns
+	 * @param length Default 43 (optional)
 	 */
 	pkceGenerate (length: number = 43): codePair {
 		return pkceGenerate(length)
@@ -27,7 +26,6 @@ export class Oauth2 {
 	/**
 	 * @param codeVerifier Get this from method pkceGenerate
 	 * @param codeChallenge Get this from method pkceGenerate
-	 * @returns
 	 */
 	pkceVerifyChallenge (codeVerifier: string, codeChallenge: string): boolean {
 		return verifyChallenge(codeVerifier, codeChallenge)
@@ -35,8 +33,7 @@ export class Oauth2 {
 
 	/**
 	 * @param codeChallenge Get this from method pkceGenerate
-	 * @param urlRedirect Optional if your set only one url redirect from api config
-	 * @returns
+	 * @param urlRedirect Optional if you set more than one redirect url from api configuration
 	 */
 	urlAuthorize (codeChallenge: string, urlRedirect: string = ''): string {
 		this.#urlRedirect = urlRedirect
@@ -52,7 +49,6 @@ export class Oauth2 {
 	/**
 	 * @param code To get code you must access url from method urlAuthorize
 	 * @param codeChallenge Get this from method pkceGenerate
-	 * @returns
 	 */
 	async getToken (code: string, codeChallenge: string): Promise<obj> {
 		return this.#fetchs.token({
@@ -67,7 +63,6 @@ export class Oauth2 {
 
 	/**
 	 * @param refreshToken Get this from method getToken
-	 * @returns
 	 */
 	async refreshToken (refreshToken: string): Promise<obj> {
 		return this.#fetchs.token({

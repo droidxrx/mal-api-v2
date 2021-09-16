@@ -35,7 +35,6 @@ const rollupConfig = {
 				declaration: true,
 				removeComments: false,
 				sourceMap: false,
-				strict: true,
 			},
 		}),
 		terser({

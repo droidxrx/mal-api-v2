@@ -9,28 +9,22 @@ export class Anime {
 	#fetchs = new Fetchs()
 
 	/**
-	 * @param accessToken
+	 * @param {string} accessToken access_token
 	 */
 	constructor (accessToken: string) {
 		this.#accessToken = accessToken
 	}
 
 	/**
-	 * @param id Anime id
-	 * @param fields Array {@link animeFullFields See}
-	 * @returns
+	 * @param {number} id Anime id
+	 * @param {animeFullFields} [fields] Array string {@link animeFullFields see}
 	 */
 	async id (id: number, fields: animeFullFields = animeFull): Promise<obj> {
 		return this.#fetchs.animeMangaById(this.#accessToken, 'anime', id, checkFields(animeFull, fields))
 	}
 
 	/**
-	 * @param obj Object
-	 * @property q String
-	 * @property limit Default 100 (optional)
-	 * @property offset Default 0 (optional)
-	 * @property fields Array {@link animeSearchQuery.fields See} (optional)
-	 * @returns
+	 * @param {animeSearchQuery} obj Anime search query
 	 */
 	async search (obj: animeSearchQuery): Promise<obj> {
 		const nObj = { q: obj.q, limit: obj.limit ?? 100, offset: obj.offset ?? 0, fields: checkFields(animeInList, obj.fields) }
@@ -38,12 +32,7 @@ export class Anime {
 	}
 
 	/**
-	 * @param obj Object
-	 * @property ranking_type Default 'all' {@link animeSearchRanking.ranking_type See}
-	 * @property limit Default 100 (optional)
-	 * @property offset Default 0 (optional)
-	 * @property fields Array {@link animeSearchRanking.fields See} (optional)
-	 * @returns
+	 * @param {animeSearchRanking} obj Anime search ranking query
 	 */
 	async ranking (obj: animeSearchRanking): Promise<obj> {
 		const nObj = { ranking_type: obj.ranking_type ?? 'all', limit: obj.limit ?? 100, offset: obj.offset ?? 0, fields: checkFields(animeInList, obj.fields) }
@@ -51,14 +40,7 @@ export class Anime {
 	}
 
 	/**
-	 * @param obj Object
-	 * @property year Default current year (optional)
-	 * @property season Default current season (optional)
-	 * @property sort Default 'anime_score' (optional)
-	 * @property limit Default 100 (optional)
-	 * @property offset Default 0 (optional)
-	 * @property fields Array {@link animeSearchSeasonal.fields See} (optional)
-	 * @returns
+	 * @param {animeSearchSeasonal} obj Anime search seasonal query
 	 */
 	async seasonal (obj: animeSearchSeasonal): Promise<obj> {
 		const nObj = { sort: obj.sort ?? 'anime_score', limit: obj.limit ?? 100, offset: obj.offset ?? 0, fields: checkFields(animeInList, obj.fields) }
@@ -73,11 +55,7 @@ export class Anime {
 	}
 
 	/**
-	 * @param obj Object
-	 * @property limit Default 100 (optional)
-	 * @property offset Default 0 (optional)
-	 * @property fields Array {@link animeSearchSuggested.fields See} (optional)
-	 * @returns
+	 * @param {animeSearchSuggested} obj Anime search suggested query
 	 */
 	async suggested (obj: animeSearchSuggested): Promise<obj> {
 		const nObj = { limit: obj.limit ?? 100, offset: obj.offset ?? 0, fields: checkFields(animeInList, obj.fields) }
