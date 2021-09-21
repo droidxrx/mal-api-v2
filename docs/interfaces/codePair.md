@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[index.d.ts:12](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L12)
+[index.d.ts:12](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L12)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[index.d.ts:13](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L13)
+[index.d.ts:13](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L13)

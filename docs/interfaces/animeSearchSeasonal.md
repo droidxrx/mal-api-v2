@@ -23,7 +23,7 @@ Array string [see](../modules.md#animeinlistfields) (optional)
 
 #### Defined in
 
-[index.d.ts:47](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L47)
+[index.d.ts:47](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L47)
 
 ---
 
@@ -35,7 +35,7 @@ Default 100 (optional)
 
 #### Defined in
 
-[index.d.ts:43](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L43)
+[index.d.ts:43](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L43)
 
 ---
 
@@ -47,7 +47,7 @@ Default 0 (optional)
 
 #### Defined in
 
-[index.d.ts:45](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L45)
+[index.d.ts:45](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L45)
 
 ---
 
@@ -59,7 +59,7 @@ Default current season (optional)
 
 #### Defined in
 
-[index.d.ts:39](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L39)
+[index.d.ts:39](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L39)
 
 ---
 
@@ -71,7 +71,7 @@ Default "anime_score" (optional)
 
 #### Defined in
 
-[index.d.ts:41](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L41)
+[index.d.ts:41](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L41)
 
 ---
 
@@ -83,4 +83,4 @@ Default current year (optional)
 
 #### Defined in
 
-[index.d.ts:37](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L37)
+[index.d.ts:37](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L37)

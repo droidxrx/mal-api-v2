@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[index.d.ts:166](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L166)
+[index.d.ts:166](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L166)
 
 ## Methods
 
@@ -53,7 +53,7 @@ Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:189](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L189)
+[index.d.ts:189](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L189)
 
 ---
 
@@ -75,7 +75,7 @@ Object
 
 #### Defined in
 
-[index.d.ts:171](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L171)
+[index.d.ts:171](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L171)
 
 ---
 
@@ -98,7 +98,7 @@ Boolean
 
 #### Defined in
 
-[index.d.ts:177](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L177)
+[index.d.ts:177](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L177)
 
 ---
 
@@ -120,7 +120,7 @@ Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:194](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L194)
+[index.d.ts:194](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L194)
 
 ---
 
@@ -143,4 +143,4 @@ Url authorize
 
 #### Defined in
 
-[index.d.ts:183](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L183)
+[index.d.ts:183](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L183)

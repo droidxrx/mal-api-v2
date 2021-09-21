@@ -21,7 +21,7 @@ Array string [see](../modules.md#mangainlistfields) (optional)
 
 #### Defined in
 
-[index.d.ts:109](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L109)
+[index.d.ts:109](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L109)
 
 ---
 
@@ -33,7 +33,7 @@ Default 100 (optional)
 
 #### Defined in
 
-[index.d.ts:105](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L105)
+[index.d.ts:105](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L105)
 
 ---
 
@@ -45,7 +45,7 @@ Default 0 (optional)
 
 #### Defined in
 
-[index.d.ts:107](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L107)
+[index.d.ts:107](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L107)
 
 ---
 
@@ -57,4 +57,4 @@ Default "all" [see](mangaSearchRanking.md#ranking_type) (optional)
 
 #### Defined in
 
-[index.d.ts:103](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L103)
+[index.d.ts:103](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L103)

@@ -20,7 +20,7 @@ String https://myanimelist.net/apiconfig/create
 
 #### Defined in
 
-[index.d.ts:157](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L157)
+[index.d.ts:157](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L157)
 
 ---
 
@@ -32,7 +32,7 @@ String (optional)
 
 #### Defined in
 
-[index.d.ts:159](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L159)
+[index.d.ts:159](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L159)
 
 ---
 
@@ -44,4 +44,4 @@ Optional if you set more than one redirect url from api configuration
 
 #### Defined in
 
-[index.d.ts:161](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L161)
+[index.d.ts:161](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L161)

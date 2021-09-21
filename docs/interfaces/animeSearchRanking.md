@@ -21,7 +21,7 @@ Array string [see](../modules.md#animeinlistfields) (optional)
 
 #### Defined in
 
-[index.d.ts:33](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L33)
+[index.d.ts:33](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L33)
 
 ---
 
@@ -33,7 +33,7 @@ Default 100 (optional)
 
 #### Defined in
 
-[index.d.ts:29](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L29)
+[index.d.ts:29](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L29)
 
 ---
 
@@ -45,7 +45,7 @@ Default 0 (optional)
 
 #### Defined in
 
-[index.d.ts:31](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L31)
+[index.d.ts:31](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L31)
 
 ---
 
@@ -57,4 +57,4 @@ Default "all" [see](animeSearchRanking.md#ranking_type) (optional)
 
 #### Defined in
 
-[index.d.ts:27](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L27)
+[index.d.ts:27](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L27)

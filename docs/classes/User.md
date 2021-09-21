@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[index.d.ts:299](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L299)
+[index.d.ts:299](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L299)
 
 ## Methods
 
@@ -50,4 +50,4 @@ Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:305](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L305)
+[index.d.ts:305](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L305)

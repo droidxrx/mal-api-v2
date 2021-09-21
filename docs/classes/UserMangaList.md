@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[index.d.ts:275](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L275)
+[index.d.ts:275](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L275)
 
 ## Methods
 
@@ -52,7 +52,7 @@ Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:287](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L287)
+[index.d.ts:287](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L287)
 
 ---
 
@@ -76,7 +76,7 @@ Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:281](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L281)
+[index.d.ts:281](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L281)
 
 ---
 
@@ -101,4 +101,4 @@ Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:294](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L294)
+[index.d.ts:294](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L294)

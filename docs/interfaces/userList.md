@@ -19,7 +19,7 @@ Array string [see](../modules.md#userfields) (optional)
 
 #### Defined in
 
-[index.d.ts:152](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L152)
+[index.d.ts:152](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L152)
 
 ---
 
@@ -31,4 +31,4 @@ Default "@me" (optional)
 
 #### Defined in
 
-[index.d.ts:150](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L150)
+[index.d.ts:150](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L150)

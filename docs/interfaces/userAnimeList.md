@@ -23,7 +23,7 @@ Array string [see](../modules.md#useranimefields) (optional)
 
 #### Defined in
 
-[index.d.ts:69](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L69)
+[index.d.ts:69](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L69)
 
 ---
 
@@ -35,7 +35,7 @@ Default 100 (optional)
 
 #### Defined in
 
-[index.d.ts:65](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L65)
+[index.d.ts:65](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L65)
 
 ---
 
@@ -47,7 +47,7 @@ Default 0 (optional)
 
 #### Defined in
 
-[index.d.ts:67](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L67)
+[index.d.ts:67](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L67)
 
 ---
 
@@ -59,7 +59,7 @@ Default "anime_title" [see](userAnimeList.md#sort) (optional)
 
 #### Defined in
 
-[index.d.ts:63](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L63)
+[index.d.ts:63](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L63)
 
 ---
 
@@ -71,7 +71,7 @@ String [see](userAnimeList.md#status) (optional)
 
 #### Defined in
 
-[index.d.ts:61](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L61)
+[index.d.ts:61](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L61)
 
 ---
 
@@ -83,4 +83,4 @@ Default "@me" (optional)
 
 #### Defined in
 
-[index.d.ts:59](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L59)
+[index.d.ts:59](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L59)

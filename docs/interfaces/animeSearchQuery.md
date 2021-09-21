@@ -21,7 +21,7 @@ Array string [see](../modules.md#animeinlistfields) (optional)
 
 #### Defined in
 
-[index.d.ts:23](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L23)
+[index.d.ts:23](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L23)
 
 ---
 
@@ -33,7 +33,7 @@ Default 100 (optional)
 
 #### Defined in
 
-[index.d.ts:19](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L19)
+[index.d.ts:19](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L19)
 
 ---
 
@@ -45,7 +45,7 @@ Default 0 (optional)
 
 #### Defined in
 
-[index.d.ts:21](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L21)
+[index.d.ts:21](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L21)
 
 ---
 
@@ -57,4 +57,4 @@ Query
 
 #### Defined in
 
-[index.d.ts:17](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L17)
+[index.d.ts:17](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L17)

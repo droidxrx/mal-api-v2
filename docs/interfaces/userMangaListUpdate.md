@@ -27,7 +27,7 @@ String (optional)
 
 #### Defined in
 
-[index.d.ts:145](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L145)
+[index.d.ts:145](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L145)
 
 ---
 
@@ -39,7 +39,7 @@ Boolean (optional)
 
 #### Defined in
 
-[index.d.ts:129](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L129)
+[index.d.ts:129](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L129)
 
 ---
 
@@ -51,7 +51,7 @@ Number (optional)
 
 #### Defined in
 
-[index.d.ts:135](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L135)
+[index.d.ts:135](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L135)
 
 ---
 
@@ -63,7 +63,7 @@ Number (optional)
 
 #### Defined in
 
-[index.d.ts:139](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L139)
+[index.d.ts:139](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L139)
 
 ---
 
@@ -75,7 +75,7 @@ Number (optional)
 
 #### Defined in
 
-[index.d.ts:133](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L133)
+[index.d.ts:133](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L133)
 
 ---
 
@@ -87,7 +87,7 @@ Number 0-2 (optional)
 
 #### Defined in
 
-[index.d.ts:137](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L137)
+[index.d.ts:137](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L137)
 
 ---
 
@@ -99,7 +99,7 @@ Number 0-5 (optional)
 
 #### Defined in
 
-[index.d.ts:141](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L141)
+[index.d.ts:141](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L141)
 
 ---
 
@@ -111,7 +111,7 @@ Number 0-10 (optional)
 
 #### Defined in
 
-[index.d.ts:131](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L131)
+[index.d.ts:131](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L131)
 
 ---
 
@@ -123,7 +123,7 @@ String [see](userMangaListUpdate.md#status) (optional)
 
 #### Defined in
 
-[index.d.ts:127](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L127)
+[index.d.ts:127](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L127)
 
 ---
 
@@ -135,4 +135,4 @@ String (optional)
 
 #### Defined in
 
-[index.d.ts:143](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L143)
+[index.d.ts:143](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L143)

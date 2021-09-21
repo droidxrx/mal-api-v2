@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[index.d.ts:1](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L1)
+[index.d.ts:1](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L1)
 
 ---
 
@@ -58,7 +58,7 @@
 
 #### Defined in
 
-[index.d.ts:2](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L2)
+[index.d.ts:2](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L2)
 
 ---
 
@@ -68,7 +68,7 @@
 
 #### Defined in
 
-[index.d.ts:3](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L3)
+[index.d.ts:3](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L3)
 
 ---
 
@@ -78,7 +78,7 @@
 
 #### Defined in
 
-[index.d.ts:4](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L4)
+[index.d.ts:4](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L4)
 
 ---
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[index.d.ts:5](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L5)
+[index.d.ts:5](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L5)
 
 ---
 
@@ -98,7 +98,7 @@
 
 #### Defined in
 
-[index.d.ts:7](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L7)
+[index.d.ts:7](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L7)
 
 ---
 
@@ -108,4 +108,4 @@
 
 #### Defined in
 
-[index.d.ts:6](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L6)
+[index.d.ts:6](https://github.com/droidxrx/mal-api-v2/blob/bcfd676/lib/index.d.ts#L6)
