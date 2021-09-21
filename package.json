@@ -18,7 +18,7 @@
 		"type": "git",
 		"url": "git+https://github.com/droidxrx/mal-api-v2.git"
 	},
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"devDependencies": {
 		"@types/node": "^16.7.10",
 		"cors": "^2.8.5",
