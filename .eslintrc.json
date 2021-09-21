@@ -1,0 +1,19 @@
+{
+	"env": {
+		"commonjs": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["eslint-config-standard"],
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "script"
+	},
+	"rules": {
+		"camelcase": "error",
+		"no-mixed-spaces-and-tabs": "error",
+		"indent": ["error", "tab"],
+		"no-tabs": "off"
+	},
+	"ignorePatterns": ["node_modules", "lib/*.ts"]
+}

@@ -1,4 +1,4 @@
-[mal-api-v2](../README.md) / Oauth2
+[mal-api-v2](../../README.md) / [Exports](../modules.md) / Oauth2
 
 # Class: Oauth2
 
@@ -20,24 +20,23 @@
 
 ### constructor
 
-• **new Oauth2**(`clientId`, `clientSecret?`)
+• **new Oauth2**(`obj`)
 
 #### Parameters
 
-| Name            | Type     | Description                                     |
-| :-------------- | :------- | :---------------------------------------------- |
-| `clientId`      | `string` | String https://myanimelist.net/apiconfig/create |
-| `clientSecret?` | `string` | -                                               |
+| Name  | Type                                              | Description                                         |
+| :---- | :------------------------------------------------ | :-------------------------------------------------- |
+| `obj` | [`Oauth2Options`](../interfaces/Oauth2Options.md) | Oauth2Options [see](../interfaces/Oauth2Options.md) |
 
 #### Defined in
 
-[index.d.ts:245](https://github.com/droidxrx/mal-api-v2/blob/4e99f9d/lib/index.d.ts#L245)
+[index.d.ts:166](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L166)
 
 ## Methods
 
 ### getToken
 
-▸ **getToken**(`code`, `codeChallenge`): `Promise`<`obj`\>
+▸ **getToken**(`code`, `codeChallenge`): `Promise`<[`obj`](../interfaces/obj.md)\>
 
 #### Parameters
 
@@ -48,17 +47,19 @@
 
 #### Returns
 
-`Promise`<`obj`\>
+`Promise`<[`obj`](../interfaces/obj.md)\>
+
+Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:264](https://github.com/droidxrx/mal-api-v2/blob/4e99f9d/lib/index.d.ts#L264)
+[index.d.ts:189](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L189)
 
 ---
 
 ### pkceGenerate
 
-▸ **pkceGenerate**(`length?`): `codePair`
+▸ **pkceGenerate**(`length?`): [`codePair`](../interfaces/codePair.md)
 
 #### Parameters
 
@@ -68,11 +69,13 @@
 
 #### Returns
 
-`codePair`
+[`codePair`](../interfaces/codePair.md)
+
+Object
 
 #### Defined in
 
-[index.d.ts:249](https://github.com/droidxrx/mal-api-v2/blob/4e99f9d/lib/index.d.ts#L249)
+[index.d.ts:171](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L171)
 
 ---
 
@@ -91,15 +94,17 @@
 
 `boolean`
 
+Boolean
+
 #### Defined in
 
-[index.d.ts:254](https://github.com/droidxrx/mal-api-v2/blob/4e99f9d/lib/index.d.ts#L254)
+[index.d.ts:177](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L177)
 
 ---
 
 ### refreshToken
 
-▸ **refreshToken**(`refreshToken`): `Promise`<`obj`\>
+▸ **refreshToken**(`refreshToken`): `Promise`<[`obj`](../interfaces/obj.md)\>
 
 #### Parameters
 
@@ -109,29 +114,33 @@
 
 #### Returns
 
-`Promise`<`obj`\>
+`Promise`<[`obj`](../interfaces/obj.md)\>
+
+Success / error return Promise object
 
 #### Defined in
 
-[index.d.ts:268](https://github.com/droidxrx/mal-api-v2/blob/4e99f9d/lib/index.d.ts#L268)
+[index.d.ts:194](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L194)
 
 ---
 
 ### urlAuthorize
 
-▸ **urlAuthorize**(`codeChallenge`, `urlRedirect?`): `string`
+▸ **urlAuthorize**(`codeChallenge`, `state?`): `string`
 
 #### Parameters
 
 | Name            | Type     | Description                       |
 | :-------------- | :------- | :-------------------------------- |
 | `codeChallenge` | `string` | Get this from method pkceGenerate |
-| `urlRedirect?`  | `string` | -                                 |
+| `state?`        | `string` | -                                 |
 
 #### Returns
 
 `string`
 
+Url authorize
+
 #### Defined in
 
-[index.d.ts:259](https://github.com/droidxrx/mal-api-v2/blob/4e99f9d/lib/index.d.ts#L259)
+[index.d.ts:183](https://github.com/droidxrx/mal-api-v2/blob/8b67e4b/lib/index.d.ts#L183)

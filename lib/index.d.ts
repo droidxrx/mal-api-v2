@@ -1,10 +1,10 @@
-type animeFullFields = undefined | string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_episodes" | "start_season" | "broadcast" | "source" | "average_episode_duration" | "rating" | "studios" | "pictures" | "background" | "related_anime" | "related_manga" | "recommendations" | "statistics">;
-type animeInListFields = undefined | string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_episodes" | "start_season" | "broadcast" | "source" | "average_episode_duration" | "rating" | "studios">;
-type mangaFullFields = undefined | string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_volumes" | "num_chapters" | "authors" | "pictures" | "background" | "related_anime" | "related_manga" | "recommendations" | "serialization">;
-type mangaInListFields = undefined | string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_volumes" | "num_chapters" | "authors">;
-type userAnimeFields = undefined | string[] | Array<"status" | "score" | "num_watched_episodes" | "is_rewatching" | "start_date" | "finish_date" | "priority" | "num_times_rewatched" | "rewatch_value" | "tags" | "updated_at" | "id" | "title" | "main_picture" | "alternative_titles" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "media_type" | "my_list_status" | "num_episodes" | "start_season" | "broadcast" | "source" | "average_episode_duration" | "rating" | "studios">;
-type userMangaFields = undefined | string[] | Array<"status" | "score" | "num_volumes_read" | "num_chapters_read" | "is_rereading" | "start_date" | "finish_date" | "priority" | "num_times_reread" | "reread_value" | "tags" | "updated_at" | "id" | "title" | "main_picture" | "alternative_titles" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "media_type" | "my_list_status" | "num_volumes" | "num_chapters" | "authors">;
-type userFields = undefined | string[] | Array<"id" | "name" | "picture" | "gender" | "birthday" | "location" | "joined_at" | "anime_statistics" | "time_zone" | "is_supporter">;
+type animeFullFields = string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_episodes" | "start_season" | "broadcast" | "source" | "average_episode_duration" | "rating" | "studios" | "pictures" | "background" | "related_anime" | "related_manga" | "recommendations" | "statistics">;
+type animeInListFields = string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_episodes" | "start_season" | "broadcast" | "source" | "average_episode_duration" | "rating" | "studios">;
+type mangaFullFields = string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_volumes" | "num_chapters" | "authors" | "pictures" | "background" | "related_anime" | "related_manga" | "recommendations" | "serialization">;
+type mangaInListFields = string[] | Array<"id" | "title" | "main_picture" | "alternative_titles" | "start_date" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "updated_at" | "media_type" | "status" | "my_list_status" | "num_volumes" | "num_chapters" | "authors">;
+type userAnimeFields = string[] | Array<"status" | "score" | "num_watched_episodes" | "is_rewatching" | "start_date" | "finish_date" | "priority" | "num_times_rewatched" | "rewatch_value" | "tags" | "updated_at" | "id" | "title" | "main_picture" | "alternative_titles" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "media_type" | "my_list_status" | "num_episodes" | "start_season" | "broadcast" | "source" | "average_episode_duration" | "rating" | "studios">;
+type userMangaFields = string[] | Array<"status" | "score" | "num_volumes_read" | "num_chapters_read" | "is_rereading" | "start_date" | "finish_date" | "priority" | "num_times_reread" | "reread_value" | "tags" | "updated_at" | "id" | "title" | "main_picture" | "alternative_titles" | "end_date" | "synopsis" | "mean" | "rank" | "popularity" | "num_list_users" | "num_scoring_users" | "nsfw" | "genres" | "created_at" | "media_type" | "my_list_status" | "num_volumes" | "num_chapters" | "authors">;
+type userFields = string[] | Array<"id" | "name" | "picture" | "gender" | "birthday" | "location" | "joined_at" | "anime_statistics" | "time_zone" | "is_supporter">;
 interface obj {
     [key: string]: any;
 }
@@ -56,7 +56,7 @@ interface animeSearchSuggested {
 }
 interface userAnimeList {
     /** Default "@me" (optional) */
-    user_name?: string;
+    userName?: string;
     /** String {@link userAnimeList.status see} (optional) */
     status?: "watching" | "completed" | "on_hold" | "dropped" | "plan_to_watch";
     /** Default "anime_title" {@link userAnimeList.sort see} (optional) */
@@ -110,7 +110,7 @@ interface mangaSearchRanking {
 }
 interface userMangaList {
     /** Default "@me" (optional) */
-    user_name?: string;
+    userName?: string;
     /** String {@link userMangaList.status see} (optional) */
     status?: "reading" | "completed" | "on_hold" | "dropped" | "plan_to_read";
     /** Default "manga_title" {@link userMangaList.sort see} (optional) */
@@ -144,127 +144,163 @@ interface userMangaListUpdate {
     /** String (optional) */
     comments?: string;
 }
-declare class Anime {
-    /**
-     * @param {string} accessToken access_token
-     */
-    constructor(accessToken: string);
-    /**
-     * @param {number} id Anime id
-     * @param {animeFullFields} [fields] Array string {@link animeFullFields see}
-     */
-    id(id: number, fields?: animeFullFields): Promise<obj>;
-    /**
-     * @param {animeSearchQuery} obj Anime search query
-     */
-    search(obj: animeSearchQuery): Promise<obj>;
-    /**
-     * @param {animeSearchRanking} obj Anime search ranking query
-     */
-    ranking(obj: animeSearchRanking): Promise<obj>;
-    /**
-     * @param {animeSearchSeasonal} obj Anime search seasonal query
-     */
-    seasonal(obj: animeSearchSeasonal): Promise<obj>;
-    /**
-     * @param {animeSearchSuggested} obj Anime search suggested query
-     */
-    suggested(obj: animeSearchSuggested): Promise<obj>;
+
+interface userList {
+	/** Default "@me" (optional) */
+    userName?: string;
+	/** Array string {@link userFields see} (optional) */
+    fields?: userFields;
 }
-declare class Manga {
-    /**
-     *@param {string} accessToken access_token
-     */
-    constructor(accessToken: string);
-    /**
-     * @param {number} id Manga id
-     * @param {mangaFullFields} [fields] Array string {@link mangaFullFields see}
-     */
-    id(id: number, fields?: mangaFullFields): Promise<obj>;
-    /**
-     * @param {mangaSearchQuery} obj Manga search query
-     */
-    search(obj: mangaSearchQuery): Promise<obj>;
-    /**
-     * @param {mangaSearchRanking} obj Manga search ranking query
-     */
-    ranking(obj: mangaSearchRanking): Promise<obj>;
+
+interface Oauth2Options {
+	/** String https://myanimelist.net/apiconfig/create */
+	clientId: string;
+	/** String (optional) */
+	clientSecret?: string;
+	/** Optional if you set more than one redirect url from api configuration */
+	urlRedirect?: string;
 }
-declare class UserAnimeList {
-    /**
-     * @param {string} accessToken access_token
-     */
-    constructor(accessToken: string);
-    /**
-     * @param {userAnimeList} obj Object
-     */
-    getList(obj: userAnimeList): Promise<obj>;
-    /**
-     * @param {number} animeId Anime id
-     */
-    deleteList(animeId: number): Promise<obj>;
-    /**
-     * @param {userAnimeListUpdate} obj Object
-     */
-    updateList(obj: userAnimeListUpdate): Promise<obj>;
-}
-declare class UserMangaList {
-    /**
-     * @param {string} accessToken access_token
-     */
-    constructor(accessToken: string);
-    /**
-     * @param {userMangaList} obj Object
-     */
-    getList(obj: userMangaList): Promise<obj>;
-    /**
-     * @param {number} mangaId Anime id
-     */
-    deleteList(mangaId: number): Promise<obj>;
-    /**
-     * @param {userMangaListUpdate} obj Object
-     */
-    updateList(obj: userMangaListUpdate): Promise<obj>;
-}
-declare class User {
-    /**
-     * @param {string} accessToken access_token
-     */
-    constructor(accessToken: string);
-    /**
-     * @param {string} [userName] Default '@me' (optional)
-     * @param {userFields} [fields] Array string {@link userFields see} (optional)
-     */
-    get(userName?: string, fields?: userFields): Promise<obj>;
-}
-declare class Oauth2 {
-    /**
-     * @param {string} clientId String https://myanimelist.net/apiconfig/create
-     * @param {string} [clientSecret] String (optional)
-     */
-    constructor(clientId: string, clientSecret?: string);
-    /**
+
+export class Oauth2 { 
+	/** @param {Oauth2Options} obj Oauth2Options {@link Oauth2Options see} */
+	constructor (obj: Oauth2Options);
+	/**
      * @param {number} [length] Default 43 (optional)
-     */
-    pkceGenerate(length?: number): codePair;
-    /**
+	 * @returns {codePair} Object
+    */
+	pkceGenerate(length?: number): codePair;
+	 /**
      * @param {string} codeVerifier Get this from method pkceGenerate
      * @param {string} codeChallenge Get this from method pkceGenerate
-     */
-    pkceVerifyChallenge(codeVerifier: string, codeChallenge: string): boolean;
-    /**
+	 * @returns {boolean} Boolean
+    */
+	pkceVerifyChallenge (codeVerifier: string, codeChallenge: string): boolean;
+	/**
      * @param {string} codeChallenge Get this from method pkceGenerate
-     * @param {string} [urlRedirect] Optional if you set more than one redirect url from api configuration
-     */
-    urlAuthorize(codeChallenge: string, urlRedirect?: string): string;
-    /**
+	 * @param {string} [state] Optional but recommended
+	 * @returns {string} Url authorize
+    */
+	urlAuthorize (codeChallenge: string, state?: string): string;
+	/**
      * @param {string} code To get code you must access url from method urlAuthorize
      * @param {string} codeChallenge Get this from method pkceGenerate
-     */
-    getToken(code: string, codeChallenge: string): Promise<obj>;
-    /**
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	getToken (code: string, codeChallenge: string): Promise<obj>;
+	/**
      * @param {string} refreshToken Get this from method getToken
-     */
-    refreshToken(refreshToken: string): Promise<obj>;
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	refreshToken (refreshToken: string): Promise<obj>
 }
-export { Anime, Manga, UserAnimeList, UserMangaList, User, Oauth2 };
+
+export class Anime {
+	/** @param {string} accessToken access_token */
+	constructor (accessToken: string);
+	/**
+	 * @param {number} id Anime id
+	 * @param {animeFullFields} [fields] Array string {@link animeFullFields see}
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	id (id: number, fields: animeFullFields): Promise<obj>
+	/**
+     * @param {animeSearchQuery} obj Anime search by query
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	search(obj: animeSearchQuery): Promise<obj>;
+	/**
+     * @param {animeSearchRanking} obj Anime search by ranking
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	ranking(obj: animeSearchRanking): Promise<obj>;
+	/**
+     * @param {animeSearchSeasonal} obj Anime search by seasonal
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	seasonal(obj: animeSearchSeasonal): Promise<obj>;
+	/**
+     * @param {animeSearchSuggested} obj Anime search by seasonal
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	suggested(obj: animeSearchSuggested): Promise<obj>;
+}
+
+export class Manga {
+	/** @param {string} accessToken access_token */
+	constructor (accessToken: string);
+	/**
+	 * @param {number} id Manga id
+	 * @param {mangaFullFields} [fields] Array string {@link mangaFullFields see}
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	id (id: number, fields: mangaFullFields): Promise<obj>
+	/**
+     * @param {mangaSearchQuery} obj Manga search by query
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	search(obj: mangaSearchQuery): Promise<obj>;
+	/**
+     * @param {mangaSearchRanking} obj Manga search by ranking
+	 * @returns {Promise<obj>} Success / error return Promise object
+    */
+	ranking(obj: mangaSearchRanking): Promise<obj>;
+}
+
+export class UserAnimeList {
+	/** @param {string} accessToken access_token */
+	constructor (accessToken: string);
+	/**
+	 * Get user anime list
+	 * @param {userAnimeList} [obj] Object {@link userAnimeList see} (optional)
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	getList(obj?: userAnimeList): Promise<obj>;
+	/**
+	 * Delete my anime list item
+	 * @param {number} id Anime id
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	deleteList(id: number): Promise<obj>;
+	/**
+	 * Update my anime list status
+	 * @param {number} id Anime id
+	 * @param {userAnimeListUpdate} obj Object {@link userAnimeListUpdate see}
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	updateList (id: number, obj: userAnimeListUpdate): Promise<obj>;
+}
+
+export class UserMangaList {
+	/** @param {string} accessToken access_token */
+	constructor (accessToken: string);
+	/**
+	 * Get user manga list
+	 * @param {userMangaList} [obj] Object {@link userMangaList see} (optional)
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	getList(obj?: userMangaList): Promise<obj>;
+	/**
+	 * Delete my manga list item
+	 * @param {number} id Manga id
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	deleteList(id: number): Promise<obj>;
+	/**
+	 * Update my Manga list status
+	 * @param {number} id Manga id
+	 * @param {userMangaListUpdate} obj Object {@link userMangaListUpdate see}
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	updateList (id: number, obj: userMangaListUpdate): Promise<obj>;
+}
+
+export class User {
+	/** @param {string} accessToken access_token */
+	constructor (accessToken: string);
+	/**
+	 * Get my user information
+	 * @param {userList} [obj] Object {@link userMangaList see} (optional)
+	 * @returns {Promise<obj>} Success / error return Promise object
+	*/
+	get(obj?: userList): Promise<obj>;
+}
