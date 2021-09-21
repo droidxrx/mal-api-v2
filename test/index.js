@@ -8,7 +8,7 @@ const port = 8080
 const homeUrl = `http://localhost:${port}`
 const dataBase = pathJoin(__dirname, 'database.json')
 
-const oAuth2Options = { clientId: '0b9ce2d2253456ec76cb2b974fe5bc6f', urlRedirect: `${homeUrl}/oauth2` }
+const oAuth2Options = { clientId: 'YOUR_TOKEN', urlRedirect: `${homeUrl}/oauth2` }
 const oauth2 = new Oauth2(oAuth2Options)
 const codeChallenge = oauth2.pkceGenerate().code_challenge
 
