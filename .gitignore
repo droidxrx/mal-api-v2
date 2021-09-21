@@ -1,4 +1,4 @@
 node_modules
 lib/index.js
 *.lock
-test/*.json
+test/database.json
